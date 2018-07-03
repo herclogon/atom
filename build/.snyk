@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:http-signature:20150122':
+    - grunt-download-electron > github-releases > request > http-signature:
+        patched: '2018-07-03T06:51:27.132Z'
+  'npm:lodash:20180130':
+    - grunt-babel > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2018-07-03T06:51:27.132Z'
+    - grunt-standard > standard > standard-format > esformatter-jsx > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2018-07-03T06:51:27.132Z'
+    - grunt-standard > standard > standard-format > esformatter-jsx > babel-core > lodash:
+        patched: '2018-07-03T06:51:27.132Z'
